@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title>CSS Grid Experiments</title>
+  <meta name='description' content=''>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link href='style.css' rel='stylesheet' media='all'>
+  <link href='gc_7.css' rel='stylesheet' media='all'>
+  <link href='gc_8.css' rel='stylesheet' media='all'>
+  <link href='gc_9.css' rel='stylesheet' media='all'>
+  <link href='gc_10.css' rel='stylesheet' media='all'>
+  <link href='gc_11.css' rel='stylesheet' media='all'>
+  <link href='gc_12.css' rel='stylesheet' media='all'>
+  <link href='gc_13.css' rel='stylesheet' media='all'>
+
+
+  <link href='gc_99.css' rel='stylesheet' media='all'>
+</head>
+<body>
+
+  <header role='banner'>
+    <h1>CSS Grid Experiments</h1>
+  </header>
+
+  <main role='main'>
+
+    <h2>Explicit grids</h2>
+    <p>Using grid-template-columns and grid-template-rows creates an explicit grid.</p>
+
+    <article>
+      <h3>1. Basic CSS Grid Container</h3>
+      <section class='gridcontainer_1'>
+        <div class='griditem'>A</div>
+        <div class='griditem'>B</div>
+        <div class='griditem'>C</div>
+        <div class='griditem'>D</div>
+        <div class='griditem'>E</div>
+        <div class='griditem'>F</div>
+      </section>
+    </article>
+
+    <article>
+      <h3>2. Explicit line-based placement</h3>
+      <section class='gridcontainer_2'>
+        <div class='griditem a'>A</div>
+        <div class='griditem b'>B</div>
+        <div class='griditem c'>C</div>
+        <div class='griditem d'>D</div>
+        <div class='griditem e'>E</div>
+        <div class='griditem f'>F</div>
+      </section>
+    </article>
+
+    <article>
+      <h3>3. Explicit line-based placement shorthand</h3>
+      <section class='gridcontainer_3'>
+        <div class='griditem a'>A</div>
+        <div class='griditem b'>B</div>
+        <div class='griditem c'>C</div>
+        <div class='griditem d'>D</div>
+        <div class='griditem e'>E</div>
+        <div class='griditem f'>F</div>
+      </section>
+    </article>
+
+    <article>
+      <h3>4. Explicit line-based placement shorthand with grid-area</h3>
+      <section class='gridcontainer_4'>
+        <div class='griditem a'>A</div>
+        <div class='griditem b'>B</div>
+        <div class='griditem c'>C</div>
+        <div class='griditem d'>D</div>
+        <div class='griditem e'>E</div>
+        <div class='griditem f'>F</div>
+      </section>
+    </article>
+
+    <article>
+      <h3>5. Line-based cell spanning</h3>
+      <section class='gridcontainer_5'>
+        <div class='griditem a'>A</div>
+        <div class='griditem b'>B</div>
+        <div class='griditem c'>C</div>
+        <div class='griditem d'>D</div>
+        <div class='griditem e'>E</div>
+        <div class='griditem f'>F</div>
+      </section>
+    </article>
+
+    <article>
+      <h3>6. Line-based cell spanning with span keyword</h3>
+      <section class='gridcontainer_6'>
+        <div class='griditem a'>A</div>
+        <div class='griditem b'>B</div>
+        <div class='griditem c'>C</div>
+        <div class='griditem d'>D</div>
+        <div class='griditem e'>E</div>
+        <div class='griditem f'>F</div>
+      </section>
+    </article>
+
+    <article>
+      <h3>7. Line-based cell spanning with named lines</h3>
+      <section class='gridcontainer_7'>
+        <div class='griditem a'>A</div>
+        <div class='griditem b'>B</div>
+        <div class='griditem c'>C</div>
+        <div class='griditem d'>D</div>
+        <div class='griditem e'>E</div>
+        <div class='griditem f'>F</div>
+      </section>
+    </article>
+
+    <article>
+      <h3>8. Line-based cell spanning with named lines and span</h3>
+      <section class='gridcontainer_8'>
+        <div class='griditem a'>A</div>
+        <div class='griditem b'>B</div>
+        <div class='griditem c'>C</div>
+        <div class='griditem d'>D</div>
+        <div class='griditem e'>E</div>
+        <div class='griditem f'>F</div>
+      </section>
+    </article>
+
+    <article>
+      <h3>9. Repeat</h3>
+      <section class='gridcontainer_9'>
+        <div class='griditem a'>A</div>
+        <div class='griditem b'>B</div>
+        <div class='griditem c'>C</div>
+        <div class='griditem d'>D</div>
+        <div class='griditem e'>E</div>
+        <div class='griditem f'>F</div>
+      </section>
+    </article>
+
+    <article>
+      <h3>10. Defining grid areas</h3>
+      <section class='gridcontainer_10'>
+        <div class='griditem header'>header</div>
+        <div class='griditem content'>content</div>
+        <div class='griditem sidebar'>sidebar</div>
+      </section>
+    </article>
+
+    <article>
+      <h3>11. No need to clear</h3>
+      <section class='gridcontainer_11'>
+        <div class='griditem header'>header</div>
+        <div class='griditem content'>This is the content. It's a bigger section than the others because it contains all these words. I'm hoping the sidebar will stretch to be same height as the content section. With the footer placed neatly below, at full width. All of this without clearing anything!</div>
+        <div class='griditem sidebar'>sidebar</div>
+        <div class='griditem footer'>footer</div>
+      </section>
+    </article>
+
+    <article>
+      <h3>12. Responsive grid areas with media queries</h3>
+      <section class='gridcontainer_12'>
+        <div class='griditem header'>header</div>
+        <div class='griditem content'>This is the content. It's a bigger section than the others because it contains all these words. I'm hoping the sidebar will stretch to be same height as the content section. With the footer placed neatly below, at full width. All of this without clearing anything!</div>
+        <div class='griditem sidebar'>sidebar</div>
+        <div class='griditem footer'>footer</div>
+      </section>
+    </article>
+
+    <article>
+      <h3>13. Rearrange</h3>
+      <section class='gridcontainer_13'>
+        <div class='griditem content_1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div class='griditem content_2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div class='griditem content_3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div class='griditem ad_1'>ADVERT</div>
+        <div class='griditem ad_2'>ADVERT</div>
+      </section>
+    </article>
+
+    <h2>Implicit</h2>
+    <p>Using grid-template-columns and grid-template-rows creates an explicit grid.</p>
+
+    <article>
+      <h3>Auto-sized implicit grid columns</h3>
+      <section class='gridcontainer_99'>
+        <div class='griditem a'>A</div>
+        <div class='griditem g'>G</div>
+        <div class='griditem b'>B</div>
+        <div class='griditem c'>C</div>
+        <div class='griditem d'>D</div>
+        <div class='griditem e'>E</div>
+        <div class='griditem f'>F</div>
+      </section>
+    </article>
+
+  </main>
+
+  <footer role='contentinfo'>
+    <p><small>eol</small></p>
+  </footer>
+
+<!-- <script src='js/jquery-2.1.1.min.js'></script> -->
+<!-- <script async src='js/production.min.js'></script> -->
+</body>
+</html>

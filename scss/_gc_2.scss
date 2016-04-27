@@ -1,0 +1,29 @@
+
+  .gridcontainer_2 {
+    display               : grid;
+    grid-template-columns : 33.3333% 33.3333% 33.3333%;
+    grid-gap              : 10px;
+    background            : #666;
+    padding               : 10px;
+
+    .griditem {
+      background    : #ddd;
+      padding       : 20px;
+      border-radius : 3px;
+    }
+
+    .a {
+      grid-row-start    : 1; // Start on row 1
+      grid-row-end      : 2; // End before row 2
+      grid-column-start : 2; // Start at column 2
+      grid-column-end   : 3; // End before column 3
+    }
+
+    .b {
+      grid-row-start    : 1; // Start at row 1
+      grid-row-end      : 2; // End before row 2
+      grid-column-start : 1; // Start at column 1
+      grid-column-end   : 2; // End before column2
+    }
+
+  }

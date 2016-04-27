@@ -1,0 +1,30 @@
+
+  .gridcontainer_5 {
+    display               : grid;
+    grid-template-columns : 33.3333% 33.3333% 33.3333%;
+    grid-gap              : 10px;
+    background            : #666;
+    padding               : 10px;
+
+    .griditem {
+      background    : #ddd;
+      padding       : 20px;
+      border-radius : 3px;
+    }
+
+    .a {
+      grid-column : 1 / 4; // Start at column 1 and end before column 4
+      grid-row    : 1;     // Exist on column 1
+    }
+
+    .b {
+      grid-column : 3 ;    // Exist on column 3
+      grid-row    : 2 / 5; // Start on column 2 and end before column 4
+    }
+
+    .c {
+      grid-column : 1 ;    // Exist on column 3
+      grid-row    : 2 / 5; // Start on column 2 and end before column 4
+    }
+
+  }

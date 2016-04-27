@@ -1,0 +1,36 @@
+
+  .gridcontainer_13 {
+    display               : grid;
+    /*grid-template-columns : 100%;*/
+
+    grid-template-columns : auto;
+    grid-template-rows    : auto;
+    grid-gap              : 10px;
+
+    background            : #666;
+    padding               : 10px;
+  }
+
+  .gridcontainer_13 .griditem {
+    background    : #ddd;
+    padding       : 20px;
+    border-radius : 3px;
+  }
+
+  .gridcontainer_13 .content_1 {
+    grid-row: 1 / 2; /* Span row 1 end at row 2 */
+  }
+  .gridcontainer_13 .content_2 {
+    grid-row: 3 / 4; /* Span row 3 end at row 4 */
+  }
+  .gridcontainer_13 .content_3 {
+    grid-row: 5 / 6; /* Span row 5 end at row 6 */
+  }
+
+  .gridcontainer_13 .ad_1 {
+    grid-row: 2 / 3; /* Span row 2 end at row 3, so it sits between content_1 and content_2 */
+  }
+
+  .gridcontainer_13 .ad_2 {
+    grid-row: 4 / 5; /* Span row 4 end at row 5, so it sits between content_2 and content_3 */
+  }

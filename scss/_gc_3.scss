@@ -1,0 +1,25 @@
+
+  .gridcontainer_3 {
+    display               : grid;
+    grid-template-columns : 33.3333% 33.3333% 33.3333%;
+    grid-gap              : 10px;
+    background            : #666;
+    padding               : 10px;
+
+    .griditem {
+      background    : #ddd;
+      padding       : 20px;
+      border-radius : 3px;
+    }
+
+    .a {
+      grid-row    : 1 / 2; // Start on row 1 and end before row 2
+      grid-column : 2 / 3; // Start at column 2 and end before column 3
+    }
+
+    .b {
+      grid-row    : 1 / 2; // Start on row 1 and end before row 2
+      grid-column : 1 / 2; // Start at column 1 and end before column 2
+    }
+
+  }

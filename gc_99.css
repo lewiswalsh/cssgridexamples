@@ -1,0 +1,25 @@
+
+  .gridcontainer_99 {
+    display               : grid;
+    grid-template-columns : 25% 25% 25%;
+    /* grid-template-rows    : repeat(4, [row] auto); /* 4 ROWS (not lines) */
+    grid-auto-columns     : 5%;
+    grid-gap              : 10px;
+    background            : #666;
+    padding               : 10px;
+  }
+  .gridcontainer_99 .griditem {
+    background    : #ddd;
+    padding       : 20px;
+    border-radius : 3px;
+  }
+
+  .gridcontainer_99 .a {
+    grid-column : 1 / 4; /* Start at column 1 and end before column 4 */
+    grid-row    : 1;               /* Exist on column 1 */
+  }
+
+  .gridcontainer_99 .g {
+    grid-column : 4 / 5; /* Start at column 1 and end before column 4 */
+    grid-row    : 1;               /* Exist on column 1 */
+  }

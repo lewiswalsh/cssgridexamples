@@ -1,0 +1,23 @@
+
+  .gridcontainer_4 {
+    display               : grid;
+    grid-template-columns : 33.3333% 33.3333% 33.3333%;
+    grid-gap              : 10px;
+    background            : #666;
+    padding               : 10px;
+
+    .griditem {
+      background    : #ddd;
+      padding       : 20px;
+      border-radius : 3px;
+    }
+
+    .a {
+      grid-area : 1 / 2 / 2 / 3; // row-start / column-start / row-end / column-end
+    }
+
+    .b {
+      grid-area : 1 / 1 / 2 / 2; // row-start / column-start / row-end / column-end
+    }
+
+  }

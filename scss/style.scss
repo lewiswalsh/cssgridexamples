@@ -1,0 +1,24 @@
+
+  @import 'reset';
+
+  body {
+    margin : 20px;
+  }
+
+  h1 {
+    font-size : 34px;
+  }
+  h2 {
+    font-size : 26px;
+  }
+  h3 {
+    font-size : 20px;
+  }
+
+  @import 'gc_1';
+  @import 'gc_2';
+  @import 'gc_3';
+  @import 'gc_4';
+  @import 'gc_5';
+  @import 'gc_6';
+  //@import 'gc_7';

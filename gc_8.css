@@ -1,0 +1,34 @@
+
+  .gridcontainer_8 {
+    display               : grid;
+    grid-template-columns : [col] 33.3333% [col] 33.3333% [col] 33.3333% [col]; /* Naming the LINES not the columns */
+    grid-template-rows    : [row] auto [row] auto [row] auto [row] auto [row] ; /* Naming the LINES not the rows */
+    grid-gap              : 10px;
+    background            : #666;
+    padding               : 10px;
+  }
+  .gridcontainer_8 .griditem {
+    background    : #ddd;
+    padding       : 20px;
+    border-radius : 3px;
+  }
+
+  .gridcontainer_8 .a {
+    grid-column : col 1 / span 3; /* Start at column 1 and end before column 4 */
+    grid-row    : row 1;               /* Exist on column 1 */
+  }
+
+  .gridcontainer_8 .b {
+    grid-column : col 3 ;              /* Exist on column 3 */
+    grid-row    : row 2 / span 2; /* Start on column 2 and end before column 4 */
+  }
+
+  .gridcontainer_8 .c {
+    grid-column : col 1 ;              /* Exist on column 3 */
+    grid-row    : row 2 / span 4; /* Start on column 2 and end before column 4 */
+  }
+
+  .gridcontainer_8 .f {
+    grid-column : col 2 / span 2 ;              /* Exist on column 3 */
+    grid-row    : row 4 / span 2; /* Start on column 2 and end before column 4 */
+  }

@@ -1,0 +1,34 @@
+
+  .gridcontainer_11 {
+    display               : grid;
+    grid-template-columns : 20% repeat(2, 40%); /* 3 COLUMNS (not lines) */
+    grid-template-areas   : "... header header"
+                            "sidebar content content"
+                            "footer footer footer";
+    grid-gap              : 10px;
+
+    background            : #666;
+    padding               : 10px;
+  }
+  .gridcontainer_11 .griditem {
+    background    : #ddd;
+    padding       : 20px;
+    border-radius : 3px;
+    font-size     : 30px;
+  }
+
+  .gridcontainer_11 .sidebar {
+    grid-area : sidebar;
+  }
+
+  .gridcontainer_11 .header {
+    grid-area : header;
+  }
+
+  .gridcontainer_11 .content {
+    grid-area : content;
+  }
+
+  .gridcontainer_11 .footer {
+    grid-area : footer;
+  }
